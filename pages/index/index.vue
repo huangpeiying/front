@@ -1,5 +1,8 @@
 <template>
   <div class="General_framework">
+    <navigate ul="../page/monitor.vue" >
+      <button type="Jump" v-on:click="btn">跳转</button>
+    </navigate>
     <div class="Project_name">{{company_name}}</div>
     <div class="Sloth_Technology">{{Sloth_Technology}}</div>
     <div class="info_card_list">
@@ -52,6 +55,11 @@
       InfoCard
     },
     methods: {
+      btn () {
+        console.log('test')
+        wx.navigateTo({
+          url: '../../pages/monitor/main'})
+      },
       bt () {
         if (this.isActive === false) {
           this.isActive = true
