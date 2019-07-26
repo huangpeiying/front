@@ -4,10 +4,15 @@
       <div class="white_part">
         <div class="white_part_one">
         <div class="name">{{Name}}</div>
-          <div class="switch">
-            <div class="switch_line"></div>
-            <div class="switch_circle"><div class="white_circle"></div></div>
-          </div>
+
+
+          <div  v-on:click="ac_switch"  class="switch">
+          <div v-if="ac_condition" class="switch_line"></div>
+          <div v-else class="switch_line_2"></div>
+          <div v-if="ac_condition" class="switch_circle"></div>
+          <div v-else class="switch_circle_2"></div>
+        </div>
+
         </div>
         <div class="explain">{{Explain}}</div>
         <div class="white_part_two">
@@ -51,13 +56,27 @@
 
 <script>
   export default {
+    data () {
+      return {
+        ac_condition: true
+      }
+    },
     name: 'Master',
     props: [
       'Name',
       'Explain',
       'temperature'
+    ],
 
-    ]
+    methods: {
+      ac_switch () {
+        if (this.ac_condition === true) {
+          this.ac_condition = false
+        } else {
+          this.ac_condition = true
+        }
+      }
+    }
   }
 </script>
 
@@ -88,30 +107,46 @@
   .switch_line{
     border-style:none none none solid;
     border-color:#0DB983;
-    border-width: 13px;
+    border-width: 25px;
     height: 2px;
     margin-top: 10px;
     margin-left: 123px;
   }
 
+  .switch_line_2{
+    border-style:none none none solid;
+    border-color:rgb(239, 239, 239);
+    border-width: 25px;
+    height: 2px;
+    margin-top: 10px;
+    margin-left: 123px;
+  }
   .switch_circle{
-    height: 20px;
-    width: 20px;
-    border-radius:100px;
-    background-color:#0DB983;
-    /*z-index: 999;*/
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    text-align: center;
+    border-radius: 100px;
+    border: 3px #0DB983 solid;
+    margin-top: 3px;
+    margin-left: -10px;
   }
-  .white_circle{
-    height:16px;
-    width: 16px;
-    border-radius:100px;
-    background-color:white;
-    margin-left: 2px;
-    margin-top: 2px;
+
+  .switch_circle_2{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    text-align: center;
+    border-radius: 100px;
+    border: 3px rgb(228, 228, 228) solid;
+    margin-top: 3px;
+    margin-left: -25px;
   }
+
   .name{
     margin-left: 20px;
     font-size: 16px;
+
   }
   .explain{
     margin-top: 10px;

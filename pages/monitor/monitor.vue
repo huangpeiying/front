@@ -1,5 +1,8 @@
 <template>
   <div class="frame">
+    <navigate ul="../page/control.vue" >
+      <button type="Jump" v-on:click="btn">跳转</button>
+    </navigate>
     <div class="part_one">
       <div class="Air_con">{{Eng_name}}</div>
       <div class="part_two">
@@ -52,6 +55,11 @@
         chinese_name: '空调',
         Num: '16'
       }
+    },
+    btn () {
+      console.log('test')
+      wx.navigateTo({
+        url: '../../pages/control/main'})
     }
   }
 </script>

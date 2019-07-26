@@ -35,7 +35,15 @@
     </div>
     </div>
 <!--    <button v-on:click="bt" v-bind:class ="{'c1': isActive, 'c2': hasError }">button</button>-->
-
+<!--<label date-v-25adc6c0 class="vue-js-switch toggled" style="&#45;&#45;h:22px ;&#45;&#45;w:120px;&#45;&#45;d:101px;">-->
+<!--  <input data-v-25adc6c0 type="checkbox" class="v-switch-input">-->
+<!--  <span data-v-25adc6c0 class="v-switch-core" style="background-color: rgb(187,153,205)">-->
+<!--    ::before-->
+<!--  </span>-->
+<!--  <div data-v-25adc6c0>-->
+<!--    <span data-v-25adc6c0 class="v-switch-label v-left"></span>-->
+<!--  </div>-->
+<!--</label>-->
 
 </template>
 
