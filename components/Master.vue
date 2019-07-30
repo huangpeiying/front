@@ -171,51 +171,47 @@
   .switch{
     display: flex;
     flex-direction: row;
+    margin-left: auto;
   }
   .switch_line{
-    /*border-style:none none none solid;*/
-    /*border-color:#0DB983;*/
-    /*border-width: 50rpx;*/
-    width: 60rpx;
+    width: 46rpx;
     height: 4rpx;
     background-color: #0DB983;
-    margin-top: 20rpx;
-    margin-left: 246rpx;
-  }
+    margin-top: 18rpx;
 
+  }
   .switch_line_2{
     width: 60rpx;
     height: 4rpx;
-    border-color:rgb(239, 239, 239);
-    margin-top: 20rpx;
-    margin-left: 246rpx;
+    background-color:#FFFFFF;
+    margin-top: 18rpx;
+    margin-left: 130rpx;
+
   }
   .switch_circle{
-    width: 20rpx;
-    height: 20rpx;
+    width: 40rpx;
+    height: 40rpx;
     background-color: white;
-    text-align: center;
     border-radius: 200rpx;
     border: 3px #0DB983 solid;
-    margin-top: 6rpx;
-    margin-left: -20rpx;
+    margin-left: auto;
+    margin-right: 40rpx;
+
   }
 
   .switch_circle_2{
-    width: 20rpx;
-    height: 20rpx;
+    width: 40rpx;
+    height: 40rpx;
     background-color: white;
-    text-align: center;
     border-radius: 100rpx;
     border: 3px rgb(228, 228, 228) solid;
-    margin-top: 6rpx;
-    margin-left: -50rpx;
+    margin-left: auto;
+    margin-right: 80rpx;
   }
 
   .name{
     margin-left: 40rpx;
     font-size: 32rpx;
-
   }
   .explain{
     margin-top: 20rpx;
@@ -398,7 +394,6 @@
   .increase{
     font-size: 60rpx;
     margin-top: 10rpx;
-    /*font-weight: bold;*/
     margin-left: 40rpx;
   }
 .second_square{
