@@ -35,7 +35,7 @@
     </div>
     </div>
 <!--    <button v-on:click="bt" v-bind:class ="{'c1': isActive, 'c2': hasError }">button</button>-->
-<!--<label date-v-25adc6c0 class="vue-js-switch toggled" style="&#45;&#45;h:22px ;&#45;&#45;w:120px;&#45;&#45;d:101px;">-->
+<!--<label date-v-25adc6c0 class="vue-js-switch toggled" style="&#45;&#45;h:22px ;&#45;&#45;w:120rpx;&#45;&#45;d:101rpx;">-->
 <!--  <input data-v-25adc6c0 type="checkbox" class="v-switch-input">-->
 <!--  <span data-v-25adc6c0 class="v-switch-core" style="background-color: rgb(187,153,205)">-->
 <!--    ::before-->
@@ -95,30 +95,30 @@
   .General_framework{
     display: flex;
     flex-direction: column;
-    height:1000px;
+    height:1000rpx;
     width: auto;
 
 
   }
   .Project_name{
     /*color: rgb(116,128,149);*/
-    font-size: 24px;
-    margin-left: 30px;
-    margin-top: 20px;
+    font-size: 48rpx;
+    margin-left: 60rpx;
+    margin-top: 40rpx;
     font-weight: bold;
 
   }
 .Sloth_Technology{
   color: rgb(116,128,149);
-  font-size: 12px;
-  margin-left: 30px;
-  margin-top: 14px;
+  font-size: 24rpx;
+  margin-left: 60rpx;
+  margin-top: 28rpx;
 }
 .green{
-  margin-top: 77px;
+  margin-top: 144rpx;
 }
 .yellow{
-  margin-top: 20px;
+  margin-top: 40rpx;
 
 }
   .c1{
@@ -131,61 +131,61 @@
   display: flex;
   flex-direction:row;
   position: fixed;
-  height: 78px;
-  /*width: 96px;*/
+  height: 156rpx;
+  width: 750rpx;
   background-color: rgb(239,239,240);
   bottom:0;
   z-index: 999;
 
 }
 .first_pic{
-  height: 48px;
-  width: 96px;
+  height: 96rpx;
+  width: 192rpx;
   background-color: #FFFFFF;
-  /*margin-top: 5px;*/
-  margin-left: 30px;
-  border-radius:4px;
+  /*margin-top: 5rpx;*/
+  margin-left: 60rpx;
+  border-radius:8rpx;
 
 }
   .set_up{
-    margin-left: 39px;
-    margin-top: 15px;
-    width: 18px;
-    height: 18px;
+    margin-left: 78rpx;
+    margin-top: 30rpx;
+    width: 36rpx;
+    height: 36rpx;
 
   }
   .second_pic{
-    height: 48px;
-    width: 96px;
+    height: 96rpx;
+    width: 192rpx;
     background-color: #FFFFFF;
-    /*margin-top: 5px;*/
-    margin-left: 14px;
-    border-radius:4px;
+    /*margin-top: 5rpx;*/
+    margin-left: 28rpx;
+    border-radius:8rpx;
   }
 .service{
-  margin-left: 39px;
-  margin-top: 15px;
-  width: 18px;
-  height: 18px;
+  margin-left: 78rpx;
+  margin-top: 30rpx;
+  width: 36rpx;
+  height: 36rpx;
 }
 .third_pic{
-  height: 48px;
-  width: 96px;
+  height: 96rpx;
+  width: 192rpx;
   background-color: #FFFFFF;
-  /*margin-top: 5px;*/
-  margin-left: 14px;
-  border-radius:4px;
+  /*margin-top: 5rpx;*/
+  margin-left: 28rpx;
+  border-radius:8rpx;
 }
 .Personal{
-  margin-left: 39px;
-  margin-top: 15px;
-  width: 18px;
-  height: 18px;
+  margin-left: 78rpx;
+  margin-top: 30rpx;
+  width: 36rpx;
+  height: 36rpx;
 }
   .black{
-    margin-top: 20px;
+    margin-top: 40rpx;
   }
 .red{
-  margin-top: 20px;
+  margin-top: 40rpx;
 }
 </style>

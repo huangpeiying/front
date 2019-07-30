@@ -47,17 +47,17 @@
 .second_framework{
   display: flex;
   flex-direction: column;
-  height: 164px;
-  width: 315px;
+  height: 328rpx;
+  width: 630rpx;
   background-color: #0DB983;
-  margin-left: 30px;
-  border-radius:10px;
+  margin-left: 60rpx;
+  border-radius:20rpx;
 }
 .English_Name{
-  margin-top:60px ;
-  margin-left: 20px;
+  margin-top:120rpx ;
+  margin-left: 40rpx;
   /*color: rgb(127,208,207);*/
-  font-size: 12px;
+  font-size: 24rpx;
 
 }
 .part1{
@@ -67,48 +67,48 @@
 
 
 .Chinese_name{
-   margin-top:8px ;
-   margin-left: 20px;
+   margin-top:8rpx ;
+   margin-left: 40rpx;
    color: #FFFFFF;
-   font-size: 20px;
+   font-size: 40rpx;
   font-weight: bold;
  }
   .number{
-    margin-top:8px ;
-    margin-left: 40px;
+    margin-top:16rpx ;
+    margin-left: 80rpx;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 40rpx;
     font-weight: bold;
   }
 .part2{
   display: flex;
   flex-direction: row;
   /*align-content: center;*/
-  margin-top: 18px;
-  width:315px;
-  height:44px;
+  margin-top: 36rpx;
+  width:630rpx;
+  height:88rpx;
   background:rgb(255, 255, 255);
   z-index: 1;
-  border-radius:0 0 10px 10px;
+  border-radius:0 0 20rpx 20rpx;
 
 }
 .normal{
   display: flex;
   flex-direction: row;
-  margin-top: 10px;
+  margin-top: 20rpx;
 
 }
 
 .Nor{
-  font-size: 14px;
-  margin-left: 20px;
+  font-size: 28rpx;
+  margin-left: 40rpx;
   color: rgb(85,97,117);
  }
 
 
 .Num1{
-  font-size: 14px;
-  margin-left: 30px;
+  font-size: 28rpx;
+  margin-left: 60rpx;
   text-align: center;
   font-weight: bold;
   color: #0DB983;
@@ -116,21 +116,21 @@
 .Abnormal{
   display: flex;
   flex-direction: row;
-  margin-left: 15px;
-  width:105px;
-  height:44px;
+  margin-left: 30rpx;
+  width:210rpx;
+  height:88rpx;
   border-style:none solid none solid;
   border-color:rgb(239, 239, 240);
-  border-width: 1px 1px
+  border-width: 2rpx 2rpx
 }
   .abnormal{
-    font-size: 14px;
-    margin-left: 20px;
+    font-size: 28rpx;
+    margin-left: 40rpx;
     color: rgb(85,97,117);
   }
   .Num2{
-    font-size: 14px;
-    margin-left: 30px;
+    font-size: 28rpx;
+    margin-left: 60rpx;
     text-align: center;
     font-weight: bold;
     color: #ED7346;
@@ -141,13 +141,13 @@
   flex-direction: row;
 }
 .serious{
-  font-size: 14px;
-  margin-left: 20px;
+  font-size: 28rpx;
+  margin-left: 40rpx;
   color: rgb(85,97,117);
 }
 .Num3{
-  font-size: 14px;
-  margin-left: 30px;
+  font-size: 28rpx;
+  margin-left: 30rpx;
   text-align: center;
   font-weight: bold;
   color: #ED4646;

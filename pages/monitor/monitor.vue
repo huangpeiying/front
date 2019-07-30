@@ -56,10 +56,12 @@
         Num: '16'
       }
     },
-    btn () {
-      console.log('test')
-      wx.navigateTo({
-        url: '../../pages/control/main'})
+    methods: {
+      btn () {
+        console.log('test')
+        wx.navigateTo({
+          url: '../../pages/control/main'})
+      }
     }
   }
 </script>
@@ -78,37 +80,36 @@
   }
   .part_one{
     width: auto;
-    height: 162px;
+    height: 324rpx;
     background-color: #FFFFFF;
 
   }
   .Air_con{
     color: rgb(130,140,160);
-    margin-left: 30px;
-    font-size: 12px;
+    margin-left: 60rpx;
+    font-size: 24rpx;
   }
   .part_two{
     display: flex;
     flex-direction: row;
-    margin-top: 12px;
+    margin-top: 24rpx;
 
   }
   .part_two_left{
     display: flex;
     flex-direction: row;
-    /*margin-top: 12px;*/
+    /*margin-top: 12rpx;*/
   }
   .C_name{
-    font-size: 24px;
-
-    margin-left: 30px;
+    font-size: 48rpx;
+    margin-left: 60rpx;
     font-weight: bold;
 
   }
   .Num1{
-    font-size: 24px;
-    /*margin-top: 12px;*/
-    margin-left: 30px;
+    font-size: 48rpx;
+    /*margin-top: 12rpx;*/
+    margin-left: 60rpx;
     font-weight: bold;
     color: #0DB983;
   }
@@ -119,52 +120,52 @@
     margin-left: auto;
   }
   .Mon{
-    height: 24px;
-    width: 24px;
-    margin-right: 30px;
+    height: 48rpx;
+    width: 48rpx;
+    margin-right: 60rpx;
   }
   .Control{
-    margin-top: 3px;
-    height: 18px;
-    width: 24px;
-    margin-right: 30px;
+    margin-top: 6rpx;
+    height: 36rpx;
+    width: 48rpx;
+    margin-right: 60rpx;
   }
   .first{
     display: flex;
     flex-direction: row;
-    margin-left: 30px;
+    margin-left: 60rpx;
   }
   .part_three{
     display: flex;
     flex-direction: row;
   }
   .red_circle{
-    height: 16px;
-    width: 19px;
-    border-radius:100px;
+    height: 32rpx;
+    width: 38rpx;
+    border-radius:200rpx;
     background-color:red;
-    margin-top: 22px;
-    margin-left: -25px;
+    margin-top: 44rpx;
+    margin-left: -50rpx;
   }
   .circle_two{
-    font-size: 12px;
+    font-size: 24rpx;
     color: #FFFFFF;
     /*color:red;*/
-    margin-left: 6px;
+    margin-left: 12rpx;
     align-content: center;
     font-weight: bold;
   }
   .line{
-    margin-top: 30px;
-    margin-left: 5px;
-    height:44px ;
+    margin-top: 60rpx;
+    margin-left: 10rpx;
+    height:88rpx ;
     border-style:none solid none none ;
     border-color:rgb(201,212,233);
-    border-width: 1px
+    border-width: 2rpx
   }
   .gray_part{
-    margin-top: 20px;
-    margin-left: 30px;
+    margin-top: 40rpx;
+    margin-left: 60rpx;
     z-index: 1;
   }
   .second{
@@ -172,6 +173,6 @@
     flex-direction: row;
   }
 .gray_part_second{
-  margin-top: 20px;
+  margin-top: 40rpx;
 }
 </style>

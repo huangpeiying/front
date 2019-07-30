@@ -25,23 +25,23 @@
   .third_part{
     display: flex;
     flex-direction: row;
-    width: 105px;
-    height: 44px;
+    width: 210rpx;
+    height: 88rpx;
     background-color: #0DB983;
-    margin-top: 30px;
+    margin-top: 60rpx;
   }
   .state{
-    font-size: 14px;
+    font-size: 28rpx;
     color: #FFFFFF;
-    margin-left: 20px;
-    margin-top: 15px;
+    margin-left: 40rpx;
+    margin-top: 30rpx;
 
   }
   .Number{
-    font-size: 14px;
+    font-size: 28rpx;
     color: #FFFFFF;
-    margin-left: 20px;
-    margin-top: 15px;
+    margin-left: 40rpx;
+    margin-top: 30rpx;
     font-weight: bold;
   }
 </style>
