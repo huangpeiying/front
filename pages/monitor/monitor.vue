@@ -1,8 +1,5 @@
 <template>
   <div class="frame">
-    <navigate ul="../page/control.vue" >
-      <button type="Jump" v-on:click="btn">跳转</button>
-    </navigate>
     <div class="part_one">
       <div class="Air_con">{{Eng_name}}</div>
       <div class="part_two">
@@ -11,43 +8,47 @@
           <div class="Num1">{{Num}}</div>
         </div>
         <div class="part_two_right">
-          <img class="Mon" src="../../../static/images/gray.png" alt="监控模式">
-          <img class="Control" src="../../../static/images/green.png" alt="控制模式">
+          <img class="monitor_green" src="../../../static/images/monitor_green.png" alt="监控模式">
+          <img class="control_gray" src="../../../static/images/control_gray.png" alt="控制模式">
         </div>
       </div>
+
       <div class="part_three">
         <div class="first">
-          <monitor state="正常"  Number="12" ></monitor>
+          <ControlOne state="正常"  Number="12" ></ControlOne>
         </div>
+
         <div class="second">
-          <monitor state="异常" third_par="#EFEFF0"  state_C="#333333" Num_C="#ED7346" Number="4" >
-          </monitor>
+          <ControlOne state="异常" third_par="#EFEFF0"  state_C="#333333" Num_C="#ED7346" Number="4" >
+          </ControlOne>
         </div>
+
         <div class="red_circle">
           <div class="circle_two">2</div>
         </div>
+
         <div class="line"></div>
+
         <div class="third">
-          <monitor state="严重" third_par="#EFEFF0"  state_C="#333333" Num_C="#ED4646" Number="0" ></monitor>
+          <ControlOne state="严重" third_par="#EFEFF0"  state_C="#333333" Num_C="#ED4646" Number="0" ></ControlOne>
         </div>
       </div>
     </div>
-    <div class="gray_part">
-      <Master Name="银河SOHO - B1" Explain="正在运行"  temperature="23"></Master>
-       <div class="gray_part_second">
-      <Master Name="银河SOHO - B1" Explain="正在运行"  temperature="23"></Master>
-       </div>
+    <div class="part_two">
+      <div class="control_card_list">
+        <ControlCard Name="银河SOHO - B1"  Explain="正在运行" ></ControlCard>
+      </div>
     </div>
-
   </div>
 </template>
 
 <script>
-  import monitor from '../../components/monitor'
-  import Master from '../../components/Master'
+  import ControlOne from '../../components/control_card_one'
+  import ControlCard from '../../components/monitor_card_one'
   export default {
-    components: {monitor,
-      Master
+    name: 'monitor',
+    components: {ControlOne,
+      ControlCard
     },
     data () {
       return {
@@ -55,24 +56,18 @@
         chinese_name: '空调',
         Num: '16'
       }
-    },
-    methods: {
-      btn () {
-        console.log('test')
-        wx.navigateTo({
-          url: '../../pages/control/main'})
-      }
     }
   }
 </script>
+
 <style>
   page{
     background-color: rgb(228,228,228);
+
   }
 </style>
 
 <style scoped>
-
   .frame{
     display: flex;
     flex-direction: column;
@@ -119,16 +114,16 @@
     flex-direction: row;
     margin-left: auto;
   }
-  .Mon{
+  .monitor_green{
     height: 48rpx;
     width: 48rpx;
     margin-right: 60rpx;
   }
-  .Control{
+  .control_gray{
     margin-top: 6rpx;
     height: 36rpx;
     width: 48rpx;
-    margin-right: 60rpx;
+    margin-right:60rpx;
   }
   .first{
     display: flex;
@@ -155,24 +150,16 @@
     align-content: center;
     font-weight: bold;
   }
-  .line{
+  .line {
     margin-top: 60rpx;
     margin-left: 10rpx;
-    height:88rpx ;
-    border-style:none solid none none ;
-    border-color:rgb(201,212,233);
-    border-width: 2rpx
+    height: 88rpx;
+    border-style: none solid none none;
+    border-color: rgb(201, 212, 233);
+    border-width: 1px
   }
-  .gray_part{
-    margin-top: 40rpx;
-    margin-left: 60rpx;
-    z-index: 1;
-  }
-  .second{
+  .control_card_list{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
-.gray_part_second{
-  margin-top: 40rpx;
-}
 </style>

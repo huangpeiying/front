@@ -66,7 +66,7 @@
       btn () {
         console.log('test')
         wx.navigateTo({
-          url: '../../pages/monitor/main'})
+          url: '../../pages/control/main'})
       },
       bt () {
         if (this.isActive === false) {

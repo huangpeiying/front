@@ -1,5 +1,5 @@
 <template>
-  <div class="Master">
+  <div class="control_card_two">
     <div class="Function">
       <div class="white_part">
         <div class="white_part_one">
@@ -92,7 +92,7 @@
     },
     data () {
       return {
-        // ac_condition: true,
+        ac_condition: true,
         // ac_drying: true,
         // ac_cooling: true,
         // ac_Heating: true,
@@ -110,7 +110,7 @@
     //     return value
     //   }
     // },
-    name: 'Master',
+    name: 'control_card_two',
     props: [
       'Name',
       'Explain',
@@ -118,13 +118,13 @@
     ],
 
     methods: {
-      // ac_switch () {
-      //   if (this.ac_condition === true) {
-      //     this.ac_condition = false
-      //   } else {
-      //     this.ac_condition = true
-      //   }
-      // },
+      ac_switch () {
+        if (this.ac_condition === true) {
+          this.ac_condition = false
+        } else {
+          this.ac_condition = true
+        }
+      },
       // drying_switch () {
       //   if (this.ac_drying === true) {
       //     this.ac_drying = false

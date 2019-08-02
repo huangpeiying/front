@@ -1,5 +1,5 @@
 <template>
-  <div class="monitor">
+  <div class="control_card_one">
     <div class="third_part" :style="{'background-color': third_par}">
       <div class="state" :style="{'color':state_C}">{{state}}</div>
       <div class="Number" :style="{'color':Num_C}">{{Number}}</div>
@@ -10,7 +10,7 @@
 
 <script>
   export default {
-    name: 'monitor',
+    name: 'control_card_one',
     props: [
       'state',
       'third_par',
@@ -28,6 +28,7 @@
     width: 210rpx;
     height: 88rpx;
     background-color: #0DB983;
+    /*background-color:red;*/
     margin-top: 60rpx;
   }
   .state{

@@ -1,5 +1,5 @@
 <template>
-    <div class="control_card">
+    <div class="monitor_card">
       <div class="first_frame">
         <div class="transverse">
 
@@ -35,7 +35,7 @@
         Green_switch: true
       }
     },
-    name: 'control_card',
+    name: 'monitor_card_one',
     props: [
       'Name',
       'Explain'
