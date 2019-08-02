@@ -15,26 +15,24 @@
         </div>
         <div class="explain">{{Explain}}</div>
         <div class="white_part_two">
-<!--        <img class="refrigeration" src="../../static/images/refrigeration.png" alt="制冷">-->
           <div class="reduce_1"></div>
           <div class="temperature">{{temperature}}</div>
           <div class="little_c">。</div>
           <div class="increase_1">+</div>
-<!--          <img class="first_Heating" src="../../static/images/Heating.png" alt="制热">-->
         </div>
       </div>
       <div class="gray_part">
         <div class="gray_part_one">
 
-          <div id="cooling" class="cooling" v-on:click="ac_control">
-              <img  v-if="current_control !== 'cooling'"  class="refrigeration_2" src="../../static/images/refrigeration_2.png" alt="制冷">
+          <div id="Cooling" class="Cooling" v-on:click="ac_control">
+              <img  v-if="current_control !== 'Cooling'"  class="refrigeration_2" src="../../static/images/refrigeration_2.png" alt="制冷">
               <div v-else  class="green_square">
                 <div class="green_square_num">制冷</div>
               </div>
           </div>
 
-          <div  id="dry"  class="dry_switch" v-on:click="ac_control">
-            <img v-if="current_control  !== 'dry'" class="drying" src="../../static/images/dehumidification.png" alt="除湿">
+          <div  id="Dry"  class="Dry" v-on:click="ac_control">
+            <img v-if="current_control  !== 'Dry'" class="drying" src="../../static/images/dehumidification.png" alt="除湿">
             <div v-else class="drying_2">
               <div class="green_drying_square">除湿</div>
             </div>
@@ -93,23 +91,9 @@
     data () {
       return {
         ac_condition: true,
-        // ac_drying: true,
-        // ac_cooling: true,
-        // ac_Heating: true,
-        // ac_aeration: true,
-        // ac_automatic: true,
         current_control: null
       }
     },
-    // filters: {
-    //   name (value) {
-    //     if (!value) return ''
-    //     if (value.length > 8) {
-    //       return value.slice(0, 8) + '...'
-    //     }
-    //     return value
-    //   }
-    // },
     name: 'control_card_two',
     props: [
       'Name',
@@ -125,44 +109,7 @@
           this.ac_condition = true
         }
       },
-      // drying_switch () {
-      //   if (this.ac_drying === true) {
-      //     this.ac_drying = false
-      //   } else {
-      //     this.ac_drying = true
-      //   }
-      // },
-      // cool () {
-      //   if (this.ac_cooling === true) {
-      //     this.ac_cooling = false
-      //   } else {
-      //     this.ac_cooling = true
-      //   }
-      // },
-      // Heating_switch () {
-      //   if (this.ac_Heating === true) {
-      //     this.ac_Heating = false
-      //   } else {
-      //     this.ac_Heating = true
-      //   }
-      // },
-      // aeration_switch () {
-      //   if (this.ac_aeration === true) {
-      //     this.ac_aeration = false
-      //   } else {
-      //     this.ac_aeration = true
-      //   }
-      // },
-      // automatic_switch () {
-      //   if (this.ac_automatic === true) {
-      //     this.ac_automatic = false
-      //   } else {
-      //     this.ac_automatic = true
-      //   }
-      // },
       ac_control (e) {
-        // console.log(e)
-        // console.log(e.currentTarget.id)
         this.current_control = e.currentTarget.id
       }
     }
@@ -218,6 +165,7 @@
     border: 3px #0DB983 solid;
     margin-left: auto;
     margin-right: 40rpx;
+    margin-top: -5rpx;
 
   }
 
@@ -229,6 +177,7 @@
     border: 3px rgb(228, 228, 228) solid;
     margin-left: auto;
     margin-right: 80rpx;
+    margin-top: -5rpx;
   }
 
   .name{
@@ -259,11 +208,7 @@
     border-radius: 18rpx;
 
   }
-  .refrigeration{
-   height:40rpx;
-    width: 40rpx;
-    margin-left: 40rpx;
-     }
+
   .reduce_1{
     width: 20rpx;
     height: 4rpx;
@@ -276,7 +221,7 @@
   color:#0DB983;
   margin-left: 72rpx;
   margin-top: 15rpx;
-  /*text-align: center;*/
+
   font-weight: bold;
   z-index: 22;
 }
@@ -284,7 +229,7 @@
   .little_c{
     color:#0DB983;
     font-size: 40rpx;
-    /*margin-top: 15rpx;*/
+
     font-weight: bold;
     margin-top: -20rpx;
   }
@@ -292,15 +237,10 @@
     margin-left: 40rpx;
     font-weight: bold;
     font-size: 40rpx;
-    /*background-color: black;*/
+
     margin-top: 15rpx;
   }
-  .first_Heating{
-    height: 40rpx;
-    width: 40rpx;
-    margin-left: auto;
-    margin-right: 40rpx;
-  }
+
 .gray_part{
   display: flex;
   flex-direction: column;
@@ -311,18 +251,24 @@
     align-content: center;
     margin-top: 62rpx;
   }
+  .Cooling{
+    height: 84rpx;
+    width: 110rpx;
+    display: flex;
+    flex-direction:row;
+    margin-left: 40rpx;
+  }
   .green_square{
     height: 84rpx;
     width: 96rpx;
     background-color: #0DB983;
-    margin-left: 40rpx;
-    border-radius:9px
+    border-radius:9px;
+    /*margin-left: 20rpx;*/
   }
   .green_square_num{
     color: #FFFFFF;
     text-align: center;
     padding-top: 20rpx;
-    /*margin-top: 10rpx;*/
     font-size: 28rpx;
     font-weight: bold;
   }
@@ -331,6 +277,12 @@
     width: 40rpx;
     margin-left: 40rpx;
     margin-top: 20rpx;
+  }
+  .Dry{
+    height: 84rpx;
+    width: 110rpx;
+    display: flex;
+    flex-direction:row;
   }
   .drying{
     height: 40rpx;
@@ -342,8 +294,8 @@
     height: 84rpx;
     width: 96rpx;
     background-color: #0DB983;
-    margin-left: 40rpx;
-    border-radius:9px
+    /*margin-left: 20rpx;*/
+    border-radius:9px;
   }
   .green_drying_square{
     color: #FFFFFF;
@@ -352,18 +304,24 @@
     padding-top: 20rpx;
     font-weight: bold;
   }
+  .Heating{
+    height: 84rpx;
+    width: 110rpx;
+    display: flex;
+    flex-direction:row;
+  }
 
   .second_Heating{
   height: 40rpx;
   width: 40rpx;
   margin-top: 20rpx;
-  margin-left: 78rpx;
+  margin-left:46rpx;
 }
  .Heating_2{
    height: 84rpx;
    width: 96rpx;
    background-color: #0DB983;
-   margin-left: 40rpx;
+   margin-left: 20rpx;
    border-radius:9px
  }
 
@@ -374,11 +332,18 @@
    padding-top: 20rpx;
    font-weight: bold;
  }
+  .Aeration{
+     height: 84rpx;
+     width: 110rpx;
+     display: flex;
+     flex-direction:row;
+   }
+
   .aeration_2{
     height: 84rpx;
     width: 96rpx;
     background-color: #0DB983;
-    margin-left: 40rpx;
+    margin-left: 20rpx;
     border-radius:9px
   }
   .green_aeration_square{
@@ -392,20 +357,26 @@
     height: 40rpx;
     width: 40rpx;
     margin-top: 20rpx;
-    margin-left: 72rpx;
+    margin-left: 46rpx;
+  }
+  .Automatic{
+    height: 84rpx;
+    width: 110rpx;
+    display: flex;
+    flex-direction:row;
   }
   .automatic{
     height: 40rpx;
     width: 40rpx;
-    margin-left: 76rpx;
+    margin-left: 46rpx;
     margin-top: 20rpx;
   }
   .automatic_2{
     height: 84rpx;
     width: 96rpx;
     background-color: #0DB983;
-    margin-left: 40rpx;
-    border-radius:9px
+    margin-left: 20rpx;
+    border-radius:9px;
   }
   .green_automatic_square{
     color: #FFFFFF;

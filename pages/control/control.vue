@@ -1,8 +1,8 @@
 <template>
   <div class="frame">
-    <navigate ul="../page/monitor.vue" >
-      <button type="Jump" v-on:click="btn">跳转</button>
-    </navigate>
+
+
+
     <div class="part_one">
       <div class="Air_con">{{Eng_name}}</div>
       <div class="part_two">
@@ -11,8 +11,13 @@
           <div class="Num1">{{Num}}</div>
         </div>
         <div class="part_two_right">
+
+          <div v-on:click="btn">
           <img class="Mon" src="../../../static/images/gray.png" alt="监控模式">
-          <img class="Control" src="../../../static/images/green.png" alt="控制模式">
+          </div>
+
+             <img class="Control" src="../../../static/images/green.png" alt="控制模式">
+
         </div>
       </div>
       <div class="part_three">
@@ -50,21 +55,24 @@
   import control from '../../components/control_card_one'
   import ControlCard from '../../components/control_card_two'
   export default {
-    components: {control,
+    components: {
+      control,
       ControlCard
     },
     data () {
       return {
         Eng_name: 'Air condition',
         chinese_name: '空调',
-        Num: '16'
+        Num: '16',
+        chaturl: ''
       }
     },
     methods: {
       btn () {
         console.log('test')
         wx.navigateTo({
-          url: '../../pages/monitor/main'})
+          url: '../../pages/monitor/main'
+        })
       }
     }
   }

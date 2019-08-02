@@ -8,8 +8,13 @@
           <div class="Num1">{{Num}}</div>
         </div>
         <div class="part_two_right">
+
           <img class="monitor_green" src="../../../static/images/monitor_green.png" alt="监控模式">
-          <img class="control_gray" src="../../../static/images/control_gray.png" alt="控制模式">
+
+          <div v-on:click="btn">
+           <img class="control_gray" src="../../../static/images/control_gray.png" alt="控制模式">
+          </div>
+
         </div>
       </div>
 
@@ -55,6 +60,14 @@
         Eng_name: 'Air condition',
         chinese_name: '空调',
         Num: '16'
+      }
+    },
+    methods: {
+      btn () {
+        console.log('test')
+        wx.navigateTo({
+          url: '../../pages/control/main'
+        })
       }
     }
   }

@@ -2,8 +2,8 @@
   "pages": [
 
     "pages/index/main",
-    "pages/monitor/main",
     "pages/control/main",
+    "pages/monitor/main",
     "pages/logs/main",
     "pages/counter/main"
 
